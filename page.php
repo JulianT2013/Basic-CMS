@@ -19,10 +19,10 @@ if ( empty( $_GET['page'] ) ) {
 	$page = $page->fetch( PDO::FETCH_ASSOC );
 
 	if ( $page ) {
-		$page['Created'] = new DateTime($page['Created']);
+		$page['created'] = new DateTime($page['created']);
 
-		if ( $page['Updated'] ) {
-			$page['Updated'] = new DateTime($page['Updated']);
+		if ( $page['updated'] ) {
+			$page['updated'] = new DateTime($page['updated']);
 		}
 	}
 }

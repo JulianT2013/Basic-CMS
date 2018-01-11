@@ -5,14 +5,14 @@
 
 	<?php else: ?>
 
-	<h2><?php echo escape( $page['Title'] ); ?></h2>
+	<h2><?php echo escape( $page['title'] ); ?></h2>
 
-	<?php echo escape( $page['Body'] ); ?>
+	<?php echo escape( $page['body'] ); ?>
 
-	<p class="faded">Created on <?php echo $page['Created']->format('jS M Y'); ?>
+	<p class="faded">Created on <?php echo $page['created']->format('jS M Y'); ?>
 
-	<?php if ( $page['Updated'] ): ?>
-		Last updated <?php echo $page['Updated']->format('jS M Y'); ?>
+	<?php if ( $page['updated'] ): ?>
+		Last updated <?php echo $page['updated']->format('jS M Y'); ?>
 	<?php endif; ?>
 
 	</p>
