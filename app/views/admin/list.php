@@ -16,13 +16,13 @@
 		<tbody>
 			<?php foreach ($pages as $page): ?>
 				<tr>
-					<td><?php echo escape( $page['Label'] ); ?></td>
-					<td><?php echo escape( $page['Title'] ); ?></td>
+					<td><?php echo escape( $page['label'] ); ?></td>
+					<td><?php echo escape( $page['title'] ); ?></td>
 					<td>
-						<a href="<?php echo BASE_URL; ?>/page.php?page=<?php echo escape( $page['Slug'] ); ?>">
-							<?php echo escape( $page['Slug'] ); ?>
+						<a href="<?php echo BASE_URL; ?>/page.php?page=<?php echo escape( $page['slug'] ); ?>">
+							<?php echo escape( $page['slug'] ); ?>
 						</td>
-					<td><a href="">Edit</a></td>
+					<td><a href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo escape( $page['id'] ); ?>">Edit</a></td>
 					<td><a href="">Delete</a></td>
 				</tr>
 			<?php endforeach; ?>

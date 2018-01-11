@@ -3,7 +3,7 @@
 require 'app/start.php';
 
 $pages = $db->query("
-	SELECT field, label, slug
+	SELECT id, label, slug
 	FROM pages
 ")->fetchAll(PDO::FETCH_ASSOC);
 
