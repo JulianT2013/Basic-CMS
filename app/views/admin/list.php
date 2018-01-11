@@ -23,7 +23,7 @@
 							<?php echo escape( $page['slug'] ); ?>
 						</td>
 					<td><a href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo escape( $page['id'] ); ?>">Edit</a></td>
-					<td><a href="">Delete</a></td>
+					<td><a href="<?php echo BASE_URL; ?>/admin/delete.php?id=<?php echo escape( $page['id'] ); ?>" onclick="return confirm('Do you want to delete Y/N')">Delete</a></td>
 				</tr>
 			<?php endforeach; ?>
 		</tbody>
